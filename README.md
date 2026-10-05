@@ -1,20 +1,13 @@
-Face Recognition System (SFace + YuNet)
-A professional, deep-learning-based facial recognition pipeline optimized for Google Colab. This project leverages modern Neural Networks to achieve high-precision identification with minimal data.
+# Face Recognition System
 
-🛠️ Tech Stack
-Detection: YuNet (Fast, lightweight DNN with 5-point landmarking).
+Face detection + recognition using YuNet + SFace. Runs fine on Colab, no heavy setup.
 
-Recognition: SFace (Generates 128-dimensional facial feature embeddings).
+What it does:
+- Detect faces in images / webcam
+- Match against known faces with little data
+- Notebook walks through it step by step
 
-Preprocessing: CLAHE (Contrast adjustment) & Affine Transforms (Alignment).
+Stack: Python, OpenCV DNN, Jupyter
 
-Matching: Cosine Similarity (Vector-based identity verification).
-
-🚀 Key Features
-Drive Integration: Automatically builds a face gallery from subfolders in Google Drive.
-
-Smart Augmentation: Enhances small datasets using horizontal flips and brightness shifts.
-
-Live UI: Custom JavaScript/Python bridge for a "Click-to-Capture" user experience.
-
-Robustness: Aligns faces to correct for head tilts and varying lighting conditions.
+Run it:
+Open `FACE_RECOGNITION.ipynb` in Colab and run all cells.
